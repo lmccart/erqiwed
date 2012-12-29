@@ -1,13 +1,18 @@
-var border = 50;
+
 
 var start = function() {
 	
 	console.log('start');
-	
+	var border = 50;
 	
 	$('#menu>div').click(function(ev) {
 	
 		ev.stopPropagation();
+		
+		var width = window.innerWidth || $(window).innerWidth();
+		var height = window.innerHeight || $(window).innerHeight();
+		
+		console.log("w "+width+" h "+height);
 	
 		var section = ev.target.id;
 		
@@ -23,8 +28,11 @@ var start = function() {
 		
 		
 		$('div', '#images').not('.'+section).each(function(i) {
-			var l = Math.random()*(window.innerWidth-250)+50+'px';
-			var t = window.innerHeight-50-border+'px';
+		
+		
+			var l = Math.random()*(width-250)+50+'px';
+			var t = height-50-border+'px';
+			
 			$(this).find('img.color').stop().animate({opacity:0, top:t, left:l, height:'50px', width:'50px'});
 			$(this).find('img.bw').animate({opacity:1, top:t, left:l, height:'50px', width:'50px'});	
 			$(this).find('.info').stop().animate({opacity:0}, 100);
@@ -35,11 +43,16 @@ var start = function() {
 	
 	$('body').click(function(ev) {
 		
+		var width = window.innerWidth || $(window).innerWidth();
+		var height = window.innerHeight || $(window).innerHeight();
+		console.log("w "+width+" h "+height);
+		
 		// randomize
 		$('#images').find('div').each(function() {
 		
-			var t = Math.random()*(window.innerHeight-150-border)+border+'px';
-			var l = Math.random()*(window.innerWidth-150-border)+border+'px';
+			var t = Math.random()*(height-150-border)+border+'px';
+			var l = Math.random()*(width-150-border)+border+'px';
+			
 			
 			$(this).find('img').stop().animate({top:t, left:l, height:'50px', width:'50px'});
 			$(this).find('.bw').animate({opacity:1});

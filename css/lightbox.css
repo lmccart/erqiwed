@@ -19,12 +19,14 @@
   text-align: center;
   line-height: 0;
   font-family: 'akzidenz-grotesk_bq_condensRg', 'san-serif';
-  font-size: 20pt;
+  font-size: 14pt;
+  opacity: 0.8;
 }
 /* line 24, ../sass/lightbox.sass */
 #lightbox img {
   width: auto;
   height: auto;
+  left: 0px;
 }
 /* line 27, ../sass/lightbox.sass */
 #lightbox a img {
@@ -54,7 +56,7 @@
 .lb-loader {
   position: absolute;
   top: 40%;
-  left: 0%;
+  left: 50%;
   height: 25%;
   width: 100%;
   text-align: center;
@@ -94,21 +96,13 @@
 .lb-prev {
   left: 0;
   float: left;
+  background: url(../images/prev.png) left 48% no-repeat;
 }
 
 /* line 76, ../sass/lightbox.sass */
 .lb-next {
   right: 0;
   float: right;
-}
-
-/* line 81, ../sass/lightbox.sass */
-.lb-prev:hover {
-  background: url(../images/prev.png) left 48% no-repeat;
-}
-
-/* line 85, ../sass/lightbox.sass */
-.lb-next:hover {
   background: url(../images/next.png) right 48% no-repeat;
 }
 
@@ -136,7 +130,7 @@
   width: 100%;
   float: left;
   text-align: left;
-  line-height: 1.1em;
+  line-height: 1.25em;
 }
 /* line 103, ../sass/lightbox.sass */
 .lb-data .lb-caption {
