@@ -127,15 +127,17 @@ lightbox = new Lightbox options
         src: this.options.fileCloseImage
       }))))))).appendTo($('body'));
       $('#lightboxOverlay').hide().on('click', function(e) {
+      	console.log('overlay click');
         _this.end();
         return false;
       });
       $lightbox = $('#lightbox');
       $lightbox.hide().on('click', function(e) {
         if ($(e.target).attr('id') === 'lightbox') _this.end();
-        return false;
+        if (!$(e.target).is('a')) return false; // allowing links to open
       });
       $lightbox.find('.lb-outerContainer').on('click', function(e) {
+      	console.log('outer click');
         if ($(e.target).attr('id') === 'lightbox') _this.end();
         return false;
       });

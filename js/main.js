@@ -29,9 +29,8 @@ var start = function() {
 		
 		$('div', '#images').not('.'+section).each(function(i) {
 		
-		
-			var l = Math.random()*(width-250)+50+'px';
-			var t = height-50-border+'px';
+			var l = width-50-border+'px';
+			var t = Math.random()*(height-250)+50+'px';
 			
 			$(this).find('img.color').stop().animate({opacity:0, top:t, left:l, height:'50px', width:'50px'});
 			$(this).find('img.bw').animate({opacity:1, top:t, left:l, height:'50px', width:'50px'});	
@@ -72,19 +71,19 @@ var start = function() {
 	
 	
 	// TRAVEL AND ACCOMODATIONS
-	images.push(new image('accomodations', 'travel_and_accomodations', 'transportation', '<a href="http://www.essexinn.com/">Chicago’s Essex Inn</a><br>800 S. Michigan Avenue, Chicago, IL 60605<br>Phone 312-542-5115<br><br>Toll-free Reservations Number: 800-621-6909<br>Rooms under Liu/Pollom Wedding starting at $164/night plus tax ($149/night for minimum 3 night stay, +$70/night for suite upgrade).<br><br>Please reserve by May 14, 2013.'));
+	images.push(new image('accomodations', 'travel_and_accomodations', 'accomodations', '<a target=_blank href=http://www.essexinn.com/>Chicago’s Essex Inn</a><br>800 S. Michigan Avenue, Chicago, IL 60605<br>Phone 312-542-5115<br><br>Toll-free Reservations Number: 800-621-6909<br>Rooms under Liu/Pollom Wedding starting at $164/night plus tax ($149/night for minimum 3 night stay, +$70/night for suite upgrade).<br><br>Please reserve by May 14, 2013.'));
 	
-	images.push(new image('transportation', 'travel_and_accomodations', 'accomodations', 'For those driving, valet parking is available at the Essex Inn - more details TBA.<br><br>There will be shuttle transportation from the Essex Inn to the ceremony/reception, and from ceremony/reception to Essex Inn on Saturday. More details TBA.<br><br>Metered parking also available in Chinatown near ceremony and reception site.<br><br>O’Hare Airport is ~19 mi from the Essex Inn. If you are taking public transit, take the Blue Line to LaSalle (0.7 mi from the hotel).<br><br>Midway Airport is ~12 mi from the Essex Inn.  If you are taking public transit, take the Orange Line to Roosevelt (0.4 mi away from the  hotel).<br><br>There are also many parking options close to the hotel:<br>Loop Auto Parks<br>312.922.1499<br>524 S Wabash Ave<br>Self Park - Uncovered<br>Open 24 Hours<br>2 Hrs $6; 6 Hrs $10; 10 Hrs $14<br>All day (until midnight): $17<br>24 hours (past midnight): $24<br>3 Days: $60<br><br>Park One<br>312.922.4128<br>525 Wabash Ave<br>Self Park - Covered<br><br>Harrison Garage<br>605 S Wabash Ave<br>312.663.0979<br>Attendant - Covered<br><br>Park One<br>312.922.8051<br>50 E Harrison St<br>Self Park - Uncovered'));
+	images.push(new image('transportation', 'travel_and_accomodations', 'transportation', 'For those driving, valet parking is available at the Essex Inn - more details TBA.<br><br>There will be shuttle transportation from the Essex Inn to the ceremony/reception, and from ceremony/reception to Essex Inn on Saturday. More details TBA.<br><br>Metered parking also available in Chinatown near ceremony and reception site.<br><br>O’Hare Airport is ~19 mi from the Essex Inn. If you are taking public transit, take the Blue Line to LaSalle (0.7 mi from the hotel).<br><br>Midway Airport is ~12 mi from the Essex Inn.  If you are taking public transit, take the Orange Line to Roosevelt (0.4 mi away from the  hotel).<br><br>There are also many parking options close to the hotel:<br>Loop Auto Parks<br>312.922.1499<br>524 S Wabash Ave<br>Self Park - Uncovered<br>Open 24 Hours<br>2 Hrs $6; 6 Hrs $10; 10 Hrs $14<br>All day (until midnight): $17<br>24 hours (past midnight): $24<br>3 Days: $60<br><br>Park One<br>312.922.4128<br>525 Wabash Ave<br>Self Park - Covered<br><br>Harrison Garage<br>605 S Wabash Ave<br>312.663.0979<br>Attendant - Covered<br><br>Park One<br>312.922.8051<br>50 E Harrison St<br>Self Park - Uncovered'));
 
-	images.push(new image('southloop', 'travel_and_accomodations', 'things to do', 'Lake Shore Drive Trail along Lake Michigan for running/biking/walking/etc<br>Navy Pier (http://www.navypier.com/)<br>Adler Planetarium (http://www.adlerplanetarium.org/)<br>Shedd Aquarium (http://www.sheddaquarium.org/)<br>The Art Institute of Chicago (http://www.artic.edu/)<br>Field Museum (http://fieldmuseum.org/)<br>Grant Park (http://www.chicagoparkdistrict.com/parks/grant-park/)<br>Bongo Room for brunch - get the red velvet pancakes!<br>Heaven on Seven for Cajun food (http://www.heavenonseven.com/wabash.html)'));
+	images.push(new image('southloop', 'travel_and_accomodations', 'things to do', 'Lake Shore Drive Trail along Lake Michigan for running/biking/walking/etc<br><a target=_blank href=http://www.navypier.com>Navy Pier</a><br><a target=_blank href=http://www.adlerplanetarium.org>Adler Planetarium</a><br><a target=_blank href=http://www.sheddaquarium.org>Shedd Aquarium</a><br><a target=_blank href=http://www.artic.edu>The Art Institute of Chicago</a><br><a target=_blank href=http://fieldmuseum.org>Field Museum</a><br><a target=_blank href=http://www.chicagoparkdistrict.com/parks/grant-park>Grant Park</a><br>Bongo Room for brunch - get the red velvet pancakes!<br><a target=_blank href=http://www.heavenonseven.com/wabash.html>Heaven on Seven for Cajun food</a>'));
 	
-	images.push(new image('map', 'travel_and_accomodations', 'map', '<a target=_blank href="http://erqiandscott.com/map.png">click here for a printable map</a>'));
+	images.push(new image('map', 'travel_and_accomodations', 'map', '<a target=_blank href=http://erqiandscott.com/map.png>click here for a printable map</a>'));
 	
 	
 	// BRIDE AND GROOM
 	images.push(new image('proposal', 'bride_and_groom', 'proposal', 'erqi was born in china, and grew up in louisiana. scott grew up in indianapolis.  they met in college at MIT and dated through erqi moving to ann arbor for medical school and scott moving to chicago to work at a trading firm. long-distance was hard and they were finally reunited when erqi chose to do her intern year in chicago. one day, scott tied a ring to his shoe and waited for erqi to ask him to go running.  erqi finally did on nov 2, 2012.  During that run, scott bent down to "tie his shoe" and proposed. erqi said yes! they will be getting married in chicago on june 15, 2013, and are excited to share this special moment with their friends and family.'));
 	
-	images.push(new image('erqisparents', 'bride_and_groom', 'erqi\s parents', 'Jason Liu and Lucy Tang are from China and moved to Louisiana in 1989 for Jason’s graduate studies. They have been married for 28 years and currently both work for the Louisiana DEQ. They have one daughter Erqi.'));
+	images.push(new image('erqisparents', 'bride_and_groom', 'erqi’s parents', 'Jason Liu and Lucy Tang are from China and moved to Louisiana in 1989 for Jason’s graduate studies. They have been married for 28 years and currently both work for the Louisiana DEQ. They have one daughter Erqi.'));
 	
 	images.push(new image('scottsparents', 'bride_and_groom', 'scott’s parents', 'Scott, Sr. and Jane Pollom are life-long residents of Indianapolis and have been married 34 yers.  Scott is a commercial investment real estate broker and both he and Jane have raised 5 tall, red heads: Katie, Elizabeth, Scott, Anna and Emily.'));
 	
@@ -111,7 +110,7 @@ var start = function() {
 	images.push(new image('weather', 'faq', 'june weather in chicago?', 'typically varies from 64-78F'));
 	images.push(new image('dress', 'faq', 'what to wear?', 'semiformal for rehearsal dinner, ceremony and reception; bring swim attire if you’re interested in impromptu parties at the essex inn rooftop pool'));
 	images.push(new image('dietary', 'faq', 'food restrictions?', 'there will be gluten-free and vegetarian options at rehearsal dinner & reception; there will also be an opportunity on the RSVP cards to let us know any additional other dietary restrictions you may have '));
-	images.push(new image('registry', 'faq', 'registry?', 'We are registered at Macy’s, Sur La Table, and Sear’s. http://www1.macys.com/registry/wedding/guest/?registryId=176277 and http://www.surlatable.com/registry/giftRegistryList.jsp?id=200579461468 and http://www.sears.com/shc/s/GRManageView?storeId=10153&catalogId=12605&langId=&externalId=900054424556010101&grUserType=BUYER&fwdURL=GRGuestRegistryView&sortType=category&pageNo=1'));
+	images.push(new image('registry', 'faq', 'registry?', 'We are registered at <a target=_blank href=http://www1.macys.com/registry/wedding/guest/?registryId=176277>Macy’s<a>, <a target=_blank href=http://www.surlatable.com/registry/giftRegistryList.jsp?id=200579461468>Sur La Table</a>, and <a target=_blank href=http://www.sears.com/shc/s/GRManageView?storeId=10153&catalogId=12605&langId=&externalId=900054424556010101&grUserType=BUYER&fwdURL=GRGuestRegistryView&sortType=category&pageNo=1>Sear’s</a>'));
 	
 	
 	// RANDOM
