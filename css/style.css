@@ -40,6 +40,7 @@ a {
 	top: 100px;
 	left: 100px;
 	opacity: 0.8;
+	font-size: 20pt;
 }
 
 #heading>div {
@@ -95,6 +96,14 @@ img {
 	padding: 5px;
 	margin: 3px;
 	font-size: 12pt;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.italic {
+	font-style: italic;
 }
 
 

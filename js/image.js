@@ -8,7 +8,7 @@ var image = function(filename, section, subsection, text) {
 	
 	var classes = 'clickable ';
 		
-	$('#images').append("<div class='icon "+section+"' id="+filename+"><a title='"+subsection+"<br>"+text+"' rel='lightbox["+section+"]' href=images/"+filename+"L.jpg ><span class='"+classes+" info'>"+subsection+"</span><img rel=lightbox class='"+classes+" color' src=images/"+filename+"S.jpg /><img rel=lightbox class='"+classes+" bw' src=images/"+filename+"S_.jpg /></a></div>");
+	$('#images').append("<div class='icon "+section+"' id="+filename+"><a title='<span class=bold>"+subsection+"</span><br><br>"+text+"' rel='lightbox["+section+"]' href=images/"+filename+"L.jpg ><span class='"+classes+" info'>"+subsection+"</span><img rel=lightbox class='"+classes+" color' src=images/"+filename+"S.jpg /><img rel=lightbox class='"+classes+" bw' src=images/"+filename+"S_.jpg /></a></div>");
 
 	var width = window.innerWidth || $(window).innerWidth();
 	var height = window.innerHeight || $(window).innerHeight();
