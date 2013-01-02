@@ -22,6 +22,7 @@ erqi and scott are getting married!</div>
 <div id="wedding_party" class="clickable">wedding party</div>
 <div id="faq" class="clickable">faq</div>
 <div id="contact" class="clickable"><a href="mailto:erqiandscott@gmail.com">contact</a></div>
+<div id="viewing" class="clickable"><a target=_blank href="/viewing">printable version</a></div>
 
 </div>
 

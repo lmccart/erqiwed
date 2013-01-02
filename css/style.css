@@ -43,6 +43,14 @@ a {
 	font-size: 20pt;
 }
 
+#text {
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	opacity: 0.8;
+	font-size: 14pt;
+}
+
 #heading>div {
 	z-index: 2;
 }
